@@ -107,10 +107,11 @@ h1 {
 </div>
 
 <script>
-    function date() {
+function date() {
 var today = new Date();
-document.getElementById('date').innerHTML = today.toDateString();
-}
+var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+document.getElementById('date').innerHTML = today.toLocaleDateString("fr-FR"); //today.toDateString();
+}   
 
 
 function clock() {
