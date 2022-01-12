@@ -110,7 +110,7 @@ h1 {
 function date() {
 var today = new Date();
 var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-document.getElementById('date').innerHTML = today.toLocaleDateString("fr-FR"); //today.toDateString();
+document.getElementById('date').innerHTML = today.toLocaleDateString("fr-FR", options);
 }   
 
 
